@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="93.0" layoutY="97.0" text="Ürün Tipi:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="138.0" text="Ağırlık:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="177.0" text="Uzaklık:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="218.0" text="Ulaşım:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="209.0" layoutY="98.0" prefWidth="150.0" />
+      <TextField layoutX="210.0" layoutY="139.0" />
+      <TextField layoutX="210.0" layoutY="182.0" />
+      <ComboBox layoutX="209.0" layoutY="222.0" prefWidth="150.0" />
+   </children>
+</Pane>
