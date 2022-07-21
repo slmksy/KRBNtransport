@@ -7,7 +7,7 @@ import com.krbn.interfaces.IVisitableVehicle;
 
 public class LandVehicle extends BaseTransportVehicle implements ITransportStrategy, IVisitableVehicle {
     public LandVehicle() {
-
+        setName("Kara");
     }
 
     @Override

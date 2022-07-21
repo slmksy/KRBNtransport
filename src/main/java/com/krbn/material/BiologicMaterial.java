@@ -7,7 +7,7 @@ import com.krbn.interfaces.IVisitableMaterial;
 public class BiologicMaterial extends BaseCriticalMaterial implements IVisitableMaterial {
 
     public BiologicMaterial(){
-
+        setName("Biyolojik");
     }
 
     @Override

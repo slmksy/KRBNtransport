@@ -6,7 +6,7 @@ import com.krbn.interfaces.IVisitableMaterial;
 public class ChemicalMaterial extends BaseCriticalMaterial implements IVisitableMaterial {
 
     public ChemicalMaterial(){
-
+        setName("Kimyasal");
     }
 
     @Override

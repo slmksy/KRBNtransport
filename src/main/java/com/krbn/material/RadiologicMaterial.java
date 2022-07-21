@@ -7,7 +7,7 @@ import com.krbn.interfaces.IVisitableMaterial;
 public class RadiologicMaterial extends BaseCriticalMaterial implements IVisitableMaterial {
 
     public RadiologicMaterial(){
-
+        setName("Radyolojik");
     }
 
     @Override

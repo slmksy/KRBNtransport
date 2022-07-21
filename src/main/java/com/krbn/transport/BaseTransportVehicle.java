@@ -1,13 +1,21 @@
 package com.krbn.transport;
 
 public abstract class BaseTransportVehicle  {
-    private double transportCost;
+
+    private String name;
+    private double transportCostFactor;
     private double loadWeight;
     private double totalMaterialCost;
     private double totalTransportTime;
 
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
     protected void setTotalTransportTime(double totalTransportTime) {
         this.totalTransportTime = totalTransportTime;
     }
@@ -24,12 +32,12 @@ public abstract class BaseTransportVehicle  {
         return totalMaterialCost;
     }
 
-    public double getTransportCost() {
-        return transportCost;
+    public double getTransportCostFactor() {
+        return transportCostFactor;
     }
 
-    public void setTransportCost(double transportCost) {
-        this.transportCost = transportCost;
+    public void setTransportCostFactor(double transportCostFactor) {
+        this.transportCostFactor = transportCostFactor;
     }
 
     public double getLoadWeight() {

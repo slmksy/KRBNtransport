@@ -7,7 +7,7 @@ import com.krbn.interfaces.IVisitableVehicle;
 
 public class AirVehicle extends BaseTransportVehicle implements ITransportStrategy, IVisitableVehicle {
     public AirVehicle(){
-
+        setName("Uçak");
     }
 
     @Override

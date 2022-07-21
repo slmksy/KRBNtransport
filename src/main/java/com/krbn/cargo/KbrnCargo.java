@@ -18,7 +18,6 @@ public class KbrnCargo implements IVisitableCargo {
 
     }
 
-
     public KbrnCargo(BaseCriticalMaterial material, BaseTransportVehicle transportVehicle){
         this.transportVehicle = transportVehicle;
         this.material = material;
@@ -34,7 +33,7 @@ public class KbrnCargo implements IVisitableCargo {
         return material.getTotalMaterialCost();
     }
     public double getTransportCost() {
-        return transportVehicle.getTransportCost();
+        return transportVehicle.getTransportCostFactor();
     }
     public double getCargoCost() {
         return cargoCost;

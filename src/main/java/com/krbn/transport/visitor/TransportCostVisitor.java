@@ -10,21 +10,21 @@ import com.krbn.transport.TrainVehicle;
 public class TransportCostVisitor implements IVehicleVisitor {
     @Override
     public double accept(AirVehicle vehicle) {
-        return vehicle.getTransportCost() * vehicle.getLoadWeight();
+        return vehicle.getTransportCostFactor() * vehicle.getLoadWeight();
     }
 
     @Override
     public double accept(ShipVehicle vehicle) {
-        return vehicle.getTransportCost() * vehicle.getLoadWeight();
+        return vehicle.getTransportCostFactor() * vehicle.getLoadWeight();
     }
 
     @Override
     public double accept(LandVehicle vehicle) {
-        return vehicle.getTransportCost() * vehicle.getLoadWeight();
+        return vehicle.getTransportCostFactor() * vehicle.getLoadWeight();
     }
 
     @Override
     public double accept(TrainVehicle vehicle) {
-        return vehicle.getTransportCost() * vehicle.getLoadWeight();
+        return vehicle.getTransportCostFactor() * vehicle.getLoadWeight();
     }
 }

@@ -6,7 +6,7 @@ import com.krbn.interfaces.IVisitableVehicle;
 
 public class ShipVehicle extends BaseTransportVehicle implements ITransportStrategy, IVisitableVehicle {
     public ShipVehicle(){
-
+        setName("Gemi");
     }
 
     @Override

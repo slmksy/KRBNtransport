@@ -7,7 +7,7 @@ import com.krbn.interfaces.IVisitableVehicle;
 
 public class TrainVehicle extends BaseTransportVehicle implements ITransportStrategy, IVisitableVehicle {
     public TrainVehicle(){
-
+        setName("Tren");
     }
     @Override
     public void move(double distance) {

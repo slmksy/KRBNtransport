@@ -7,7 +7,7 @@ import com.krbn.interfaces.IVisitableMaterial;
 public class NuclearMaterial extends BaseCriticalMaterial implements IVisitableMaterial {
 
     public NuclearMaterial(){
-
+        setName("Nükleer");
     }
 
 
