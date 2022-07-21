@@ -3,9 +3,8 @@ package com.krbn.transport;
 public abstract class BaseTransportVehicle  {
 
     private String name;
-    private double transportCostFactor;
     private double loadWeight;
-    private double totalMaterialCost;
+    private double totalTransportCost;
     private double totalTransportTime;
 
 
@@ -20,24 +19,16 @@ public abstract class BaseTransportVehicle  {
         this.totalTransportTime = totalTransportTime;
     }
 
-    protected void setTotalMaterialCost(double totalMaterialCost) {
-        this.totalMaterialCost = totalMaterialCost;
+    protected void setTotalTransportCost(double totalTransportCost) {
+        this.totalTransportCost = totalTransportCost;
     }
 
     public double getTotalTransportTime() {
         return totalTransportTime;
     }
 
-    public double getTotalMaterialCost() {
-        return totalMaterialCost;
-    }
-
-    public double getTransportCostFactor() {
-        return transportCostFactor;
-    }
-
-    public void setTransportCostFactor(double transportCostFactor) {
-        this.transportCostFactor = transportCostFactor;
+    public double getTotalTransportCost() {
+        return totalTransportCost;
     }
 
     public double getLoadWeight() {

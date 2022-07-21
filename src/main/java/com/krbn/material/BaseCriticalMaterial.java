@@ -2,8 +2,6 @@ package com.krbn.material;
 
 public abstract class BaseCriticalMaterial {
     private String name;
-    private double dutyAndStampCostFactor;
-    private double protectionCostFactor;
     private double weight;
     private double totalMaterialCost;
 
@@ -31,23 +29,5 @@ public abstract class BaseCriticalMaterial {
     public void setWeight(double weight) {
         this.weight = weight;
     }
-
-    public double getDutyAndStampCostFactor() {
-        return dutyAndStampCostFactor;
-    }
-
-    public void setDutyAndStampCostFactor(int dutyAndStampCostFactor) {
-        this.dutyAndStampCostFactor = dutyAndStampCostFactor;
-    }
-
-    public double getProtectionCostFactor() {
-        return protectionCostFactor;
-    }
-
-    public void setProtectionCostFactor(double protectionCostFactor) {
-        this.protectionCostFactor = protectionCostFactor;
-    }
-
-
 
 }

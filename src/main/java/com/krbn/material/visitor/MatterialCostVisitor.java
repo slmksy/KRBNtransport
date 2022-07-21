@@ -10,21 +10,29 @@ import com.krbn.material.RadiologicMaterial;
 public class MatterialCostVisitor implements IMaterialVisitor {
     @Override
     public double accept(BiologicMaterial material) {
-       return material.getWeight() * (material.getProtectionCostFactor() + material.getDutyAndStampCostFactor());
+        double protectionCostFactor = 6;
+        double dutyAndStampCostFactor = 10;
+        return material.getWeight() * (protectionCostFactor + dutyAndStampCostFactor);
     }
 
     @Override
     public double accept(ChemicalMaterial material) {
-        return  material.getWeight() * (material.getProtectionCostFactor() + material.getDutyAndStampCostFactor());
+        double protectionCostFactor = 2;
+        double dutyAndStampCostFactor = 5;
+        return material.getWeight() * (protectionCostFactor + dutyAndStampCostFactor);
     }
 
     @Override
     public double accept(NuclearMaterial material) {
-        return  material.getWeight() * (material.getProtectionCostFactor() + material.getDutyAndStampCostFactor());
+        double protectionCostFactor = 25;
+        double dutyAndStampCostFactor = 20;
+        return material.getWeight() * (protectionCostFactor + dutyAndStampCostFactor);
     }
 
     @Override
     public double accept(RadiologicMaterial material) {
-        return  material.getWeight() * (material.getProtectionCostFactor() + material.getDutyAndStampCostFactor());
+        double protectionCostFactor = 12;
+        double dutyAndStampCostFactor = 15;
+        return material.getWeight() * (protectionCostFactor + dutyAndStampCostFactor);
     }
 }

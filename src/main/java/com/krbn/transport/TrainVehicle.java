@@ -16,6 +16,6 @@ public class TrainVehicle extends BaseTransportVehicle implements ITransportStra
 
     @Override
     public void visit(IVehicleVisitor visitor) {
-        setTotalMaterialCost(visitor.accept(this));
+        setTotalTransportCost(visitor.accept(this));
     }
 }

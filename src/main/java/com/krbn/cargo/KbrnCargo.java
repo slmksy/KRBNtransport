@@ -33,7 +33,7 @@ public class KbrnCargo implements IVisitableCargo {
         return material.getTotalMaterialCost();
     }
     public double getTransportCost() {
-        return transportVehicle.getTransportCostFactor();
+        return transportVehicle.getTotalTransportCost();
     }
     public double getCargoCost() {
         return cargoCost;

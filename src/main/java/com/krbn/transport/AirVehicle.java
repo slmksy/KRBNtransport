@@ -17,6 +17,6 @@ public class AirVehicle extends BaseTransportVehicle implements ITransportStrate
 
     @Override
     public void visit(IVehicleVisitor visitor) {
-        setTotalMaterialCost(visitor.accept(this));
+        setTotalTransportCost(visitor.accept(this));
     }
 }

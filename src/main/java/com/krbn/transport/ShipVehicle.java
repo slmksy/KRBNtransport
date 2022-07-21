@@ -16,6 +16,6 @@ public class ShipVehicle extends BaseTransportVehicle implements ITransportStrat
 
     @Override
     public void visit(IVehicleVisitor visitor) {
-        setTotalMaterialCost(visitor.accept(this));
+        setTotalTransportCost(visitor.accept(this));
     }
 }
